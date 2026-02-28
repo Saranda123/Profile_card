@@ -1,5 +1,4 @@
 import Title from "../Components/title"
-
 function Home() {
     return (
         <>
