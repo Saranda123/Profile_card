@@ -1,0 +1,29 @@
+@use '../Base/variables' as *;
+
+.Button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}
+
+.primarybutton{
+    background-color: $lightblue;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $blue;
+    }
+}
+
+.secondarybutton{
+    border: solid 2px $lightblue;
+    &:hover{
+        cursor: pointer;
+        background-color: $darkblue2;
+    }
+}
