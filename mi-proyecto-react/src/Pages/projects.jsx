@@ -6,7 +6,7 @@ function Proyects() {
         <div className="margin">
             <>
                 <h2>Proyects</h2>
-                <div className="proyect">
+                <div className="projects">
                     <Html />  
                     <React />  
                 </div>

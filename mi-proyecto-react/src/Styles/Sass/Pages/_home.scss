@@ -2,10 +2,12 @@
 @use '../Base/mixins' as *;
 
 .title{
+    display: grid;
+    grid-template-rows:1fr 1fr ;
     @include tablet {
-        display: grid;
+        padding: 0 2rem;
+        grid-template-rows:1fr;
         grid-template-columns: repeat(3,1fr);
-        gap: 2rem;
             .info{
                 grid-column: 1 / span 2;
             }
@@ -17,12 +19,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        h1,h3,p{
+        h1,h2,h3,p{
             margin:1rem ;
+        }
+        p{
+            font-weight:bold;
+            text-align: end;
         }
             
     }
 
+}
+
+.info{
+    padding: 0 5rem;
 }
 .buttons{
     display: flex;
@@ -31,19 +41,20 @@
     gap: 2rem;
 }
 
-
-.proyect{
-    @include tablet{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-}
-
 .image {
+    display: flex;
+    justify-content: center;
     img{
         width: 100%;
         max-width: 20rem;
-        border-radius: 50%;
-    }
+        @include tablet{
+            width: 100%;
+            max-width: 20rem;
+            border-radius: 50%;
+        }
+    } 
+}
+
+.biography{
+    padding: 0 2rem;
 }

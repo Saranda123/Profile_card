@@ -7,8 +7,9 @@ function Title() {
                 <div className="info">
                     <div className="name">
                         <h1>Santiago Aranda</h1>
-                        <h3>Software Engineer</h3>
-                        <p>Web Developer</p>
+                        <h2>Software Engineer</h2>
+                        <h3>Web Developer</h3>
+                        <p>Bogota D.C (Colombia) </p>
                     </div>
                     <div className="buttons">
                         <a className="Button primarybutton" target="_blank" href="https://github.com/Saranda123">Github</a>

@@ -1,0 +1,19 @@
+@use '../Base/variables' as *;
+@use '../Base/mixins' as *;
+
+.projects{
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

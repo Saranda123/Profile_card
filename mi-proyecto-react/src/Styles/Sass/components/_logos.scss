@@ -1,13 +1,16 @@
 @use '../Base/variables' as *;
 @use '../Base/mixins' as *;
 
-.logos{
-    display: grid; 
-    width: 100%;
-    text-align: center;
-    grid-template-columns: repeat(10, 1fr);
-    @include tablet{
-        padding-left: 4rem;
-    }
+.logos {
+    width: 200%;
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+    gap: 20px;
+}
 
+.logo {
+    max-width: 5rem;
+    min-width: 80px; /* importante */
+    flex-shrink: 0;  /* evita que se encojan */
 }

@@ -1,6 +1,6 @@
 function React() {
     return(
-        <article>
+        <article className="project">
             <h3>REACT</h3>
             <a className="Button primarybutton" target="_blank" href="/">Ver mas</a>
         </article>
