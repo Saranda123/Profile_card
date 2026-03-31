@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
+
 function React() {
     return(
-        <article className="project">
+        <article className="project border">
             <h3>REACT</h3>
-            <a className="Button primarybutton" target="_blank" href="/">Ver mas</a>
+            <Link className="Button primarybutton" to="/react">Ver mas</Link>
         </article>
     )
 }

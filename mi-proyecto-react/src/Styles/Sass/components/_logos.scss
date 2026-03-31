@@ -1,16 +1,35 @@
 @use '../Base/variables' as *;
 @use '../Base/mixins' as *;
 
-.logos {
-    width: 200%;
-    display: flex;
-    overflow-x: hidden;
-    white-space: nowrap;
-    gap: 20px;
+.tecnologies {
+    width: 100%;
 }
 
+.logos {
+    width: 100%;
+    overflow: hidden;
+}
+
+.logos__track {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    min-width: max-content;}
+
 .logo {
-    max-width: 5rem;
-    min-width: 80px; /* importante */
-    flex-shrink: 0;  /* evita que se encojan */
+    width: auto;
+    height: auto;
+    max-width: 7rem;
+    min-width: 6rem;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+/* opcional: mejora experiencia en freeze de animación */
+.logos,
+.logos__track,
+.logo {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: scroll-position;
 }

@@ -1,17 +1,36 @@
-let intervalo = null;
+let animationFrame = null;
+let position = 0;
 
-export const start = () => {
-    const logos = document.querySelector('.logos');
-    if (!logos) return;
+export const startCarousel = (selector = '.logos', speed = 0.5) => {
+    const container = document.querySelector(selector);
+    if (!container) return;
 
-    clearInterval(intervalo); // evita duplicados
+    const track = container.querySelector('.logos__track');
+    if (!track || track.scrollWidth === 0) return;
 
-    intervalo = setInterval(() => {
-        logos.scrollLeft += 1;
+    const setCount = 2;
+    const setWidth = track.scrollWidth / setCount;
+    const logosPerSet = 13; // number of unique logos
 
-        if (logos.scrollLeft >= logos.scrollWidth - logos.clientWidth) {
-            logos.scrollLeft = 0;
+    const animate = () => {
+        position += speed;
+        if (position >= setWidth) {
+            position -= setWidth;
+            for (let i = 0; i < logosPerSet; i++) {
+                track.appendChild(track.children[0]);
+            }
         }
+        track.style.transform = `translateX(-${position}px)`;
+        animationFrame = requestAnimationFrame(animate);
+    };
 
-    }, 20);
-}
+    cancelAnimationFrame(animationFrame);
+    animationFrame = requestAnimationFrame(animate);
+};
+
+export const stopCarousel = () => {
+    if (animationFrame !== null) {
+        cancelAnimationFrame(animationFrame);
+        animationFrame = null;
+    }
+};
