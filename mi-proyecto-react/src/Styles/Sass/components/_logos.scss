@@ -1,0 +1,13 @@
+@use '../Base/variables' as *;
+@use '../Base/mixins' as *;
+
+.logos{
+    display: grid; 
+    width: 100%;
+    text-align: center;
+    grid-template-columns: repeat(10, 1fr);
+    @include tablet{
+        padding-left: 4rem;
+    }
+
+}

@@ -1,24 +1,28 @@
+import Photo from "../assets/Photo.jpeg"
+
 function Title() {
     return (
         <>
-            <div className="title margin">
+            <header className="title margin">
                 <div className="info">
-                    <h1>Santiago Aranda</h1>
-                    <h3>Software Engineer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div className="name">
+                        <h1>Santiago Aranda</h1>
+                        <h3>Software Engineer</h3>
+                        <p>Web Developer</p>
+                    </div>
                     <div className="buttons">
                         <a className="Button primarybutton" target="_blank" href="https://github.com/Saranda123">Github</a>
-                        <a className="Button secondarybutton" target="_blank" href="https://www.linkedin.com/in/santiago-aranda-b85362269/">Linkedin</a>
+                        <a className="Button secondarybutton" target="_blank" href="https://drive.google.com/file/d/1uhIJuAQgpUvtcSWu5UqGZkANuBGML2Fj/view?usp=sharing">cv</a>
                     </div> 
                     {/* buttons*/}
                 </div>
                 {/* info*/}
                 <div className="image">
-                    <img src="" alt="mi_perfil" />
+                    <img src={Photo} alt="mi_perfil" />
                 </div>
                 {/* image*/}
                 
-            </div> 
+            </header> 
             {/* title*/}
         </>
     )

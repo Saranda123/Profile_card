@@ -12,18 +12,18 @@
 }
 
 .primarybutton{
-    background-color: $lightblue;
+    background-color: $button;
 
     &:hover{
         cursor: pointer;
-        background-color: $blue;
+        background-color: $hoverButton1;
     }
 }
 
 .secondarybutton{
-    border: solid 2px $lightblue;
+    border: solid 2px $button;
     &:hover{
         cursor: pointer;
-        background-color: $darkblue2;
+        background-color: $hoverButton2;
     }
 }

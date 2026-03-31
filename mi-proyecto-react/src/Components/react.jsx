@@ -1,6 +1,9 @@
 function React() {
     return(
-        <h3>REACT</h3>
+        <article>
+            <h3>REACT</h3>
+            <a className="Button primarybutton" target="_blank" href="/">Ver mas</a>
+        </article>
     )
 }
 

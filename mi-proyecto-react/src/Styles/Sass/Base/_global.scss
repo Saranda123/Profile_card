@@ -13,7 +13,7 @@ body{
   font-family: $fuente_principal;
   font-optical-sizing: auto;
   font-style: normal;
-  background-image: linear-gradient(to top, $darkblue 0%, $greyblue 100%);
+  background-image: linear-gradient(to top, $mainColor 0%, $SecondaryColor 100%);
 }
 .contenedor{
     max-width: 120rem;
