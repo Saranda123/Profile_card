@@ -46,7 +46,7 @@ mi-proyecto-react/
 ├── src/
 │   ├── components/
 │   │   └── title.jsx
-│   ├── Pages
+│   ├── pages/
 │   │   └── home.jsx
 │   ├── styles/
 │   │   └── Sass/

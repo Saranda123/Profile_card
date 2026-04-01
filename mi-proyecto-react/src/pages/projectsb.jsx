@@ -1,4 +1,4 @@
-import Projects_react from '../Components/projects_react'
+import Projects_react from '../components/projects_react'
 function Projectsb () {
     return (
         <>

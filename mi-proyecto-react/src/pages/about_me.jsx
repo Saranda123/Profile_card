@@ -1,4 +1,4 @@
-import Biography from "../Components/biography"
+import Biography from "../components/biography"
 
 
 function AboutMe() {

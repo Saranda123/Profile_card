@@ -1,4 +1,4 @@
-import Projects_html from '../Components/projects_html'
+import Projects_html from '../components/projects_html'
 
 function Projectsa () {
     return (

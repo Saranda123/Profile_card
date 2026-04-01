@@ -1,5 +1,5 @@
-import Html from "../Components/html";
-import React from "../Components/react";
+import Html from "../components/html";
+import React from "../components/react";
 
 function Proyects() {
     return (

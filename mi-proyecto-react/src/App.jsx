@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './Pages/Home'
-import AboutMe from './Pages/about_me'
-import Projects from './Pages/projects'
-import Contact from './Pages/contact'
-import Projectsa from './Pages/projectsa'
-import Projectsb from './Pages/projectsb'
+import Home from './pages/Home'
+import AboutMe from './pages/about_me'
+import Projects from './pages/projects'
+import Contact from './pages/contact'
+import Projectsa from './pages/projectsa'
+import Projectsb from './pages/projectsb'
 
 
-import './Styles/Sass/app.scss'
+import './styles/Sass/app.scss'
 
 function App() {
 

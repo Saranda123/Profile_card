@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { startCarousel, stopCarousel } from '../JS/Carousel'
+import { startCarousel, stopCarousel } from '../utils/Carousel'
 
 const technologies = [
   {alt: 'html5', src: 'https://img.icons8.com/color/48/000000/html-5.png'},
