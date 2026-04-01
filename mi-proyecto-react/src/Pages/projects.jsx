@@ -5,7 +5,7 @@ function Proyects() {
     return (
         <div className="margin">
             <>
-                <h2>Proyects</h2>
+                <h2>Projects</h2>
                 <div className="projects">
                     <Html />  
                     <React />  

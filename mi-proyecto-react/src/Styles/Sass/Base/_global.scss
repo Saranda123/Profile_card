@@ -15,9 +15,30 @@ body{
   font-style: normal;
   background-image: linear-gradient(to top, $mainColor 0%, $SecondaryColor 100%);
   margin: 0;
+  color: white; /* Ensure text is white */
 }
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
     padding: 0;
+}
+
+/* Basic styles for main sections */
+.title {
+  padding: 2rem;
+  text-align: center;
+}
+
+.biography {
+  padding: 2rem;
+  text-align: center;
+}
+
+.tecnologies {
+  padding: 2rem;
+  text-align: center;
+}
+
+.margin {
+  margin: 2rem 0;
 }

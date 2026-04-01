@@ -1,0 +1,29 @@
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px;
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    .project-item{
+        padding: 20px;
+        text-align: center;
+        border: 2px solid white;
+        .project-img{
+            width: 100%;
+            height: auto;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+        }
+    }
+}
