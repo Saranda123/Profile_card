@@ -40,24 +40,58 @@ The goal of this project is to practice modern front-end development workflows a
 ## 📂 Project Structure
 
 ```bash
-mi-proyecto-react/
-│
-├── public/
-├── src/
-│   ├── components/
-│   │   └── title.jsx
-│   ├── pages/
-│   │   └── home.jsx
-│   ├── styles/
-│   │   └── Sass/
-│   │       ├── Base/
-│   │       │
-│   │       └──app.scss
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── package.json
-└── vite.config.js
+└── 📁Profile_card
+    └── 📁mi-proyecto-react
+        └── 📁public
+        └── 📁src
+            └── 📁assets
+                ├── freelancer.png
+                ├── FrontEndStore.png
+                ├── notas.png
+                ├── oferksa.png
+                ├── Photo.jpeg
+                ├── react.svg
+            └── 📁components
+                ├── biography.jsx
+                ├── html.jsx
+                ├── languages.jsx
+                ├── projects_html.jsx
+                ├── projects_react.jsx
+                ├── react.jsx
+                ├── title.jsx
+            └── 📁pages
+                ├── about_me.jsx
+                ├── contact.jsx
+                ├── Home.jsx
+                ├── projects.jsx
+                ├── projectsa.jsx
+                ├── projectsb.jsx
+            └── 📁styles
+                └── 📁Sass
+                    └── 📁Base
+                        ├── _global.scss
+                        ├── _index.scss
+                        ├── _mixins.scss
+                        ├── _normalize.scss
+                        ├── _typography.scss
+                        ├── _utilities.scss
+                        ├── _variables.scss
+                    └── 📁components
+                        ├── _buttons.scss
+                        ├── _index.scss
+                        ├── _logos.scss
+                        ├── _proyects.scss
+                    └── 📁Pages
+                        ├── _contact.scss
+                        ├── _home.scss
+                        ├── _index.scss
+                        ├── _projects.scss
+                    ├── app.scss
+            └── 📁utils
+                ├── Carousel.js
+            ├── App.jsx
+            ├── main.jsx
+    └── Readme.md
 ```
 
 ---
